@@ -26,8 +26,9 @@ const handleClick = (tab: TabsPaneContext, event: Event) => {
       </div>
       <div class="layout_header-right">
         <span class="page-item">首页 <span class="i-border"></span></span>
-        <span class="page-item">公司简介 <span class="i-border"></span></span>
         <span class="page-item">公司业务 <span class="i-border"></span></span>
+
+        <span class="page-item">公司简介 <span class="i-border"></span></span>
 
         <el-button type="primary" :icon="Phone"> 联系我们</el-button>
       </div>
