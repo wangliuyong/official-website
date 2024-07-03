@@ -11,24 +11,26 @@ const handleClick = (tab: TabsPaneContext, event: Event) => {
 </script>
 
 <template>
-  <div
-    class="layout_header-wrap flex items-center align-center justify-between h-32 m-auto"
-  >
-    <div class="layout_header-left">
-      <img
-        src="https://jmy-pic.baidu.com/0/pic/364490799_-1647483170.jpg"
-        alt=""
-        class="logo"
-        width="290"
-        height="48"
-      />
-    </div>
-    <div class="layout_header-right">
-      <span class="page-item">首页 <span class="i-border"></span></span>
-      <span class="page-item">公司简介 <span class="i-border"></span></span>
-      <span class="page-item">公司业务 <span class="i-border"></span></span>
+  <div class="header-wrap">
+    <div
+      class="layout_header-wrap flex items-center align-center justify-between h-32 m-auto"
+    >
+      <div class="layout_header-left">
+        <img
+          src="https://jmy-pic.baidu.com/0/pic/364490799_-1647483170.jpg"
+          alt=""
+          class="logo"
+          width="290"
+          height="48"
+        />
+      </div>
+      <div class="layout_header-right">
+        <span class="page-item">首页 <span class="i-border"></span></span>
+        <span class="page-item">公司简介 <span class="i-border"></span></span>
+        <span class="page-item">公司业务 <span class="i-border"></span></span>
 
-      <el-button type="primary" :icon="Phone"> 联系我们</el-button>
+        <el-button type="primary" :icon="Phone"> 联系我们</el-button>
+      </div>
     </div>
   </div>
 </template>
@@ -36,11 +38,16 @@ const handleClick = (tab: TabsPaneContext, event: Event) => {
 <style scoped lang="scss">
 @import "@/assets/style/variable.scss";
 
+.header-wrap {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  background-color: #fff;
+}
 .layout_header {
   &-wrap {
     width: 1190px;
     height: 80px;
-    background-color: #fff;
   }
 
   &-right {

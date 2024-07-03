@@ -5,8 +5,16 @@ import Footer from "./footer.vue";
 
 <template>
   <Header />
-  <slot></slot>
+  <div class="container">
+    <slot></slot>
+  </div>
+
   <Footer />
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.container {
+  max-width: 88.75em;
+  margin: 0 auto;
+}
+</style>
