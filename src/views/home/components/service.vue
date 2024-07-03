@@ -10,7 +10,7 @@ import package4 from "../../../assets/package4.jpg";
 
 <template>
   <Title title="公司业务" id="service" describe="为商品无障碍流通不懈努力！" />
-  <div class="service_card-list">
+  <div class="service_card-list content">
     <div class="service_card-item">
       <div class="img-wrap">
         <img :src="FBA" alt="" />

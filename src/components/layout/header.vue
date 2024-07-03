@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import { Phone } from "@element-plus/icons-vue";
+
+const openWl = () => {
+  console.log(99999);
+  window.open("http://120.79.45.105/#/order-track");
+};
 </script>
 
 <template>
@@ -19,6 +24,9 @@ import { Phone } from "@element-plus/icons-vue";
       <div class="layout_header-right">
         <span class="page-item">首页 <span class="i-border"></span></span>
         <span class="page-item">公司业务 <span class="i-border"></span></span>
+        <span class="page-item" @click="openWl"
+          >物流追踪 <span class="i-border"></span
+        ></span>
 
         <span class="page-item">公司简介 <span class="i-border"></span></span>
 
