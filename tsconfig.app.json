@@ -25,7 +25,8 @@
     "paths": {
       "@/*": ["src/*"],
       "@*": ["./*"],
-      "@styles/*": ["assets/styles/*"]
+      "@styles/*": ["assets/styles/*"],
+      "@element-plus/icons-vue": ["node_modules/@element-plus/icons-vue"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
