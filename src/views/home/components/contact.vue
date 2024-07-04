@@ -59,7 +59,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: auto 100%;
-  padding: 100px 0;
+  padding: 70px 0;
   .qr {
     margin-top: 2.25em;
   }
